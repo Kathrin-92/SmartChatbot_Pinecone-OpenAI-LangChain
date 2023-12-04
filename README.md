@@ -1,4 +1,4 @@
-# Creating a ChatBot that learns from External Knowledge 
+# Creating a ChatBot that learns from Contextual Knowledge 
 Building a Chatbot with LangChain, OpenAI, and the Pinecone vector database, using streamlit to build a simple UI.
 
 <img width="669" alt="Bildschirm­foto 2023-12-04 um 20 47 23" src="https://github.com/Kathrin-92/SmartChatbot_Pinecone-OpenAI-LangChain/assets/71875232/2e82c2ce-70db-4309-be78-87ec73e052af">

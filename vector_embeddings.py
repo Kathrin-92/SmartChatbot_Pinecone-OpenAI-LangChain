@@ -12,9 +12,10 @@ import pinecone
 from tqdm import tqdm
 
 # External module imports
-from langchain.embeddings.openai import OpenAIEmbeddings
 from datasets import load_dataset
+from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Pinecone
+
 
 # ----------------------------------------------------------------------------------------------------------------------
 # LOAD ENVIRONMENT VARIABLES

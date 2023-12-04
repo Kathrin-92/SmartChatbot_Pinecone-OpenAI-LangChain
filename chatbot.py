@@ -35,9 +35,8 @@ def augmented_prompt(user_query: str):
     results = vectorstore.similarity_search(user_query,
                                             k=3)  # perform similarity search and return X most relevant docs
     source_knowledge = "\n".join([x.page_content for x in results])
-    augmented_prompt = f'''Using the contexts below, answer the query. If some information is not provided within
-    the contexts below, do not include, and if the query cannot be answered with the below information, 
-    say "I don't know".
+    augmented_prompt = f'''Using the contexts below, answer the user's question. Say "I don't know" if you cannot
+    answer the question with the below provided context.
 
     Contexts:
     {source_knowledge}

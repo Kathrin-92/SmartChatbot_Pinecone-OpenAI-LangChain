@@ -27,7 +27,7 @@ load_dotenv()
 # Access the API key and environment
 pinecone_api_key = os.environ.get("PINECONE_API_KEY")
 pinecone_environment = os.environ["PINECONE_ENVIRONMENT"]
-openai_api_key = os.environ.get("OPEN_API_KEY")
+openai_api_key = os.environ.get("OPENAI_API_KEY")
 
 
 # ----------------------------------------------------------------------------------------------------------------------
@@ -55,7 +55,7 @@ index = pinecone.Index(index_name)
 # LOADING DATA / CREATE VECTOR EMBEDDINGS = BUILDING KNOWLEDGE BASE
 # ----------------------------------------------------------------------------------------------------------------------
 
-embed_model = OpenAIEmbeddings(model="text-embedding-ada-002")
+embed_model = OpenAIEmbeddings(model="text-embedding-ada-002", api_key=openai_api_key)
 
 # load training data and convert to pd DataFrame
 # dataset contains chunked extracts (of ~300 tokens) from papers related to (and including) the Llama 2 research paper

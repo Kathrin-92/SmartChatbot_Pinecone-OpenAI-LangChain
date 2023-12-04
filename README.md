@@ -8,6 +8,7 @@ Building a Chatbot with LangChain, OpenAI, and the Pinecone vector database, usi
 **Project Overview** 
 
 This chatbot project leverages technologies including LangChain, OpenAI, and the Pinecone vector database. The primary objective of this project is to create a simple chatbot that is capable of learning from provided data and adept at answering previously unknown facts. 
+This project is based on the DataCamp Codealong: [Building Chatbots with the OpenAI API and Pinecone](https://www.datacamp.com/code-along/building-chatbots-openai-api-pinecone)
 
 The training data is extracted from arxiv research papers and is sourced from the Hugging Face datasets repository (source: https://huggingface.co/datasets/jamescalam/llama-2-arxiv-papers-chunked). The dataset contains chunked extracts of approximately 300 tokens each. This means that the chatbot can provide LLama-specific knowledge.
 
